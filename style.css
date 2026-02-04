@@ -1,0 +1,91 @@
+    /* 1. Global Reset & Font */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+        max-width: 500px; 
+        margin: 40px auto; 
+        padding: 20px;
+        background: white;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+
+    /* 2. Headings */
+    h1 {
+        text-align: center;
+        color: #2c3e50;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    /* 3. Inputs (Search, Text, Date) */
+    input[type="text"], 
+    input[type="search"], 
+    input[type="date"] {
+        width: 100%; 
+        padding: 12px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    /* 4. Labels */
+    label {
+        font-weight: bold;
+        color: #555;
+    }
+
+    /* 5. Buttons */
+    button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    /* Main "Add" Button */
+    #addToList {
+        width: 100%;
+        background-color: #28a745; 
+        color: white;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    #addToList:hover { background-color: #218838; }
+
+    /* Edit/Delete Buttons */
+    #editTask { background-color: #ffc107; color: #333; } 
+    #deleteTask { background-color: #dc3545; color: white; } 
+    
+    /* 6. List Styling */
+    ul {
+        list-style-type: none; 
+        padding: 0;
+        margin-top: 20px;
+        border-top: 2px solid #eee;
+    }
+
+    li {
+        background: #fff;
+        border-bottom: 1px solid #eee;
+        padding: 15px 10px;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Helper for the button container inside the list */
+    ul div {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px; /* Space between Edit and Delete buttons */
+        justify-content: flex-end;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+    }
