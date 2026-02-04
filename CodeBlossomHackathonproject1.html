@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> TO-DO LIST, making everyday a lot more easier</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 id="fisrtHeading">Here are your current tasks</h1>
+  <input type='search' id='searchBar' placeholder='Search for your task here'>
+  <button id='searchButton'> Search for Task</button>
+  <!--this is the form to add a new task-->
+
+  <label for='enterTask'> Enter a new task:</label><br></br>
+  <input type="text" placeholder="What would you like to add to your to do list?" id='enterTask' name='enterToDoList'>
+  <p id='errorMessage' style="color : red"></p>
+
+  <input type='date' id='enterDueDate' placeholder='When should this task be complete?'>
+  <br></br>
+
+  <button id="addToList">Add to your list</button>
+  <hr>
+
+
+  <ul id="everydayTask">
+    <!-- this is where our lists will be displayed-->
+
+  </ul>
+
+  <!--these buttons are used to edit or delete our tasks-->
+  <div id='searchResults'>
+
+  </div>
+
+
+</body>
+<script src="codeBlossomJavascript.js"></script>
+
+</html>
